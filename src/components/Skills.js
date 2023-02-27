@@ -2,7 +2,10 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { FaReact, FaCss3, FaJs, FaHtml5 } from "react-icons/fa";
+import { FaReact, FaCss3, FaJs, FaHtml5, FaNodeJs, FaGithub } from "react-icons/fa";
+import { VscJson } from "react-icons/vsc";
+import { SiMongodb } from "react-icons/si";
+
 
 function Skills() {
     const responsive = {
@@ -50,6 +53,22 @@ function Skills() {
                                 <div className="item">
                                     <FaCss3  size={70} className="Image"/>
                                     <h5>CSS</h5>
+                                </div>
+                                <div className="item">
+                                    <SiMongodb  size={70} className="Image"/>
+                                    <h5>MongoDB</h5>
+                                </div>
+                                <div className="item">
+                                    <VscJson  size={70} className="Image"/>
+                                    <h5>JSON</h5>
+                                </div>
+                                <div className="item">
+                                    <FaNodeJs  size={70} className="Image"/>
+                                    <h5>Node.js</h5>
+                                </div>
+                                <div className="item">
+                                    <FaGithub  size={70} className="Image"/>
+                                    <h5>Git / Github</h5>
                                 </div>
                             </Carousel>
                         </div>
