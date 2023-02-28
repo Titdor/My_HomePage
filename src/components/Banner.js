@@ -9,7 +9,7 @@ import 'animate.css';
 function Banner () {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["A Junior Web Developer"];
+    const toRotate = ["A Web Developer"];
     const [text, setText] = useState("");
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -57,7 +57,6 @@ function Banner () {
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className="tagline">Welcome to my HomePage</span>
                                     <h1>{`Hi I'm Theodor Panguripan `}<span className="wrap">{text}</span></h1>
-                                    <button onClick={() => console.log('connect')}>My Resume<FaDownload size={25}/></button>
                                 </div>}
                         </TrackVisibility>
                     </Col>
@@ -65,7 +64,7 @@ function Banner () {
                         <TrackVisibility>
                         {({ isVisible }) =>
                             <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                                <img src={headerImage} alt="Headaer Image"></img>
+                                <img src={headerImage} alt="Header Image"></img>
                             </div>}
                         </TrackVisibility>
                     </Col>
